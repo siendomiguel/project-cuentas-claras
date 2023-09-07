@@ -1,0 +1,72 @@
+.cardFormContainer {
+  height: 100%;
+  width: 25vw;
+}
+
+.titleForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.iconTitleForm {
+  color: green;
+  font-size: 30px;
+}
+
+.form {
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.inputForm {
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 15px;
+  color: black;
+  font-size: 15px;
+}
+
+.btnForm {
+  background: var(--bgGreen);
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 200px;
+}
+
+.labelForm {
+  font-weight: 500;
+  font-size: 0.8rem;
+  font-size: 18px;
+}
+
+.selectPersonal {
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  color: black;
+  font-size: 15px;
+}
+
+.selectPaid {
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  color: black;
+  font-size: 15px;
+}

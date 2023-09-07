@@ -1,30 +1,27 @@
+import BtnSignOut from '../Buttons/BtnSignOut'
+import BrandingMenu from '../Menu/BrandingMenu'
+import DataAccount from '../Menu/DataAccount'
+import Menu from '../Menu/Menu'
 import styles from './SidebarMenu.module.css'
-import Link from 'next/link'
 
 const SidebarMenu = () => {
   return (
     <div className={styles.SidebarMenuContainer}>
-      <Link href="/">
-        <section className={styles.topMenu}>
-          <h1>Cuentas Claras</h1>
-          <p className={styles.version}>1.0.0</p>
+      <div className={styles.SidebarMenuContent}>
+        <BrandingMenu />
+        <section className={styles.midSection}>
+          <DataAccount />
+          <nav>
+            <Menu namePage="Movimientos" linkName="movimientos" />
+            <Menu namePage="Inventario" linkName="inventario" />
+            <Menu namePage="Empleados" linkName="empleados" />
+            <Menu namePage="Ingresos extra" linkName="ingresos-extra" />
+            <Menu namePage="Clientes" linkName="clientes" />
+            <Menu namePage="Proveedores" linkName="proveedores" />
+          </nav>
         </section>
-      </Link>
-      <hr />
-      <ul className={styles.listMenu}>
-        <Link href="/movimientos">
-          <li>Movimientos</li>
-        </Link>
-        <li>Inventario</li>
-        <li>Empleados</li>
-        <li>Ingresos extra</li>
-        <li>Clientes</li>
-        <li>Proveedores</li>
-      </ul>
-      <hr />
-      <section className={styles.logoutContainer}>
-        <h3>Cerrar sesión</h3>
-      </section>
+        <BtnSignOut />
+      </div>
     </div>
   )
 }

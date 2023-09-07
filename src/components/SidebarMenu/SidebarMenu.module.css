@@ -1,50 +1,40 @@
 .SidebarMenuContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
+  max-height: 100vh;
   width: 20vw;
   background-color: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  padding: 20px;
   color: black;
 }
 
-.topMenu {
+.SidebarMenuContent {
+  height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  width: 100%;
-  height: 80px;
-  border-radius: 5px;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
 }
 
-.version {
-  background-color: #c5c5c5;
-  padding: 2px 12px;
-  border-radius: 5px;
-  font-size: .75rem;
+.SidebarMenuContent::-webkit-scrollbar {
+  width: 4px; /* Ancho de la barra de desplazamiento */
 }
 
-.listMenu {
-  text-decoration: none;
-  list-style: none;
+/* Estilo para el "track" de la barra de desplazamiento (el fondo) */
+.SidebarMenuContent::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Color de fondo del track */
 }
 
-.listMenu li {
-  margin: 10px;
-  padding: 10px;
+/* Estilo para el "thumb" de la barra de desplazamiento (la manija) */
+.SidebarMenuContent::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color de la manija */
+  border-radius: 6px; /* Borde redondeado de la manija */
 }
 
-.logoutContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  background-color: #c5c5c5;
-  width: 100%;
-  height: 80px;
-  border-radius: 5px;
+/* Estilo para el "thumb" de la barra de desplazamiento cuando se desplaza */
+.SidebarMenuContent::-webkit-scrollbar-thumb:hover {
+  background-color: #888; /* Color de la manija al pasar el mouse */
+}
+
+.midSection {
+  height: 100%;
 }

@@ -1,0 +1,11 @@
+.menuContainer {
+  display: flex;
+  padding: 6px;
+  margin: 15px;
+}
+
+.menuContainer:hover {
+  background-color: var(--bgGray);
+  cursor: pointer;
+  border-radius: 5px;
+}

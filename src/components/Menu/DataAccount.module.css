@@ -1,0 +1,10 @@
+.DataAccountContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bgGray);
+  height: 80px;
+  margin: 10px;
+  border-radius: 5px;
+}

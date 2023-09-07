@@ -1,0 +1,18 @@
+.AbrirCaja {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.NuevoIngreso {
+  background-color: var(--bgGreen);
+  color: white;
+  border: none;
+  margin: 0 30px;
+}
+
+.NuevoEgreso {
+  background-color: var(--bgRed);
+  color: white;
+  border: none;
+}
