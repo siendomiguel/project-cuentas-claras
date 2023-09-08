@@ -1,3 +1,5 @@
+'use client'
+import { IconSquareRoundedX } from '@tabler/icons-react'
 import styles from './Modal.module.css'
 
 export default function BasicModal({ setShowModal, children }) {
@@ -8,9 +10,9 @@ export default function BasicModal({ setShowModal, children }) {
   return (
     <div className={styles.modalContainer} id={'modal'} onClick={handleClose}>
       <div className={styles.modalBody}>
-        <span className={styles.CloseModal} onClick={() => {
+        <IconSquareRoundedX className={styles.CloseModal} onClick={() => {
             setShowModal(false)
-          }}>X</span>
+          }}/>
           {children}
       </div>
     </div>

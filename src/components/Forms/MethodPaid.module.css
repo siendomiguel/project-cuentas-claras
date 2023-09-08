@@ -1,0 +1,69 @@
+/* .methodPaidContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: wrap;
+  width: calc(100% + 8px);
+  margin-left: -8px;
+}
+
+.containerMethodPaid {
+  box-sizing: border-box;
+  flex-basis: 33.3333%;
+  width: 100%;
+  padding: 8px 0 0 8px;
+  flex-grow: 0;
+  max-width: 33.3333%;
+  cursor: pointer;
+  flex-direction: row;
+}
+ */
+.containerMethodPaid {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px 0;
+}
+
+
+.MethodPaidBody {
+  cursor: pointer;
+  height: 104px;
+  width: 100%;
+  max-width: 32%;
+  border: solid 1px black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.MethodPaidBodySelect {
+  cursor: pointer;
+  height: 104px;
+  width: 100%;
+  max-width: 32%;
+  border: solid 3px var(--bgGreen);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.MethodPaidBody:hover {
+  background: var(--bgDarkGray);
+}
+
+.titleMethodPaid {
+  text-align: center;
+}
+
+.iconMethodPaid {
+  color: rgb(0, 0, 0);
+  width: 50px;
+  height: 35px;
+}
+
