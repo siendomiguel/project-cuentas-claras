@@ -6,6 +6,12 @@
   color: black;
 }
 
+@media (max-width: 1400px) {
+  .SidebarMenuContent {
+    width: 240px;
+  }
+}
+
 .SidebarMenuContent {
   height: 100vh;
   display: flex;

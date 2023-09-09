@@ -6,4 +6,91 @@
   padding: 2rem;
   min-height: 100vh;
   width: 100%;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  gap: 20px;
+}
+
+.main::-webkit-scrollbar {
+  width: 4px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo para el "track" de la barra de desplazamiento (el fondo) */
+.main::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Color de fondo del track */
+}
+
+/* Estilo para el "thumb" de la barra de desplazamiento (la manija) */
+.main::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color de la manija */
+  border-radius: 6px; /* Borde redondeado de la manija */
+}
+
+/* Estilo para el "thumb" de la barra de desplazamiento cuando se desplaza */
+.main::-webkit-scrollbar-thumb:hover {
+  background-color: #888; /* Color de la manija al pasar el mouse */
+}
+
+
+.ContainerListFilter {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  justify-content: space-around;
+  border-radius: 15px;
+}
+
+.ContainerListFilter button {
+  width: 35%;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ContainerListFilter button:hover {
+  background-color: aquamarine;
+}
+
+.ContainerTotales {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  justify-content: space-around;
+  border-radius: 15px;
+}
+
+.ContainerTotalBody {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--bgDarkGrayDarker);
+  width: 22%;
+  padding: 10px;
+  border-radius: 8px;
+  gap: 5px;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.TitleAndTotal {
+  font-size: 0.875rem;
+}
+
+
+.ContainerEncabezados {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  justify-content: space-around;
+  border-radius: 15px;
 }
