@@ -4,6 +4,46 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  min-height: 100vh;
+  max-height: 100%;
   width: 100%;
+}
+
+.contenedorPrincipal {
+  min-height: calc(100% - 139px);
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  color: black;
+  margin-top: 1rem;
+  border-radius: 15px;
+}
+
+.containerContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  padding: 15px;
+}
+
+.containerContent::-webkit-scrollbar {
+  width: 4px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo para el "track" de la barra de desplazamiento (el fondo) */
+.containerContent::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Color de fondo del track */
+}
+
+/* Estilo para el "thumb" de la barra de desplazamiento (la manija) */
+.containerContent::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color de la manija */
+  border-radius: 6px; /* Borde redondeado de la manija */
+}
+
+/* Estilo para el "thumb" de la barra de desplazamiento cuando se desplaza */
+.containerContent::-webkit-scrollbar-thumb:hover {
+  background-color: #888; /* Color de la manija al pasar el mouse */
 }

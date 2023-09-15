@@ -1,7 +1,7 @@
 'use client'
 import styles from './BtnStyles.module.css'
 import { useState } from 'react'
-import BasicModal from './Modal'
+import BasicModal from './ModalSidebar'
 import FormGain from '@/components/Forms/FormGain'
 
 const BtnModalNewGain = () => {

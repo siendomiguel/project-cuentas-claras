@@ -1,0 +1,11 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(131, 131, 131);
+  width: 100%;
+  border-radius: 5px;
+  color: rgb(82, 82, 82);
+  cursor: pointer;
+}

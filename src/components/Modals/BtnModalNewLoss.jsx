@@ -2,7 +2,7 @@
 
 import styles from './BtnStyles.module.css'
 import { useState } from 'react'
-import  BasicModal  from './Modal'
+import  BasicModal  from './ModalSidebar'
 import FormLoss from '@/components/Forms/FormLoss'
 
 const BtnModalNewLoss = () => {

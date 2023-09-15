@@ -1,0 +1,56 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modalBody {
+  background-color: white;
+  min-width: 25vw;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  border-radius: 15px;
+}
+
+.modalBody::-webkit-scrollbar {
+  width: 4px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo para el "track" de la barra de desplazamiento (el fondo) */
+.modalBody::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Color de fondo del track */
+}
+
+/* Estilo para el "thumb" de la barra de desplazamiento (la manija) */
+.modalBody::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color de la manija */
+  border-radius: 6px; /* Borde redondeado de la manija */
+}
+
+/* Estilo para el "thumb" de la barra de desplazamiento cuando se desplaza */
+.modalBody::-webkit-scrollbar-thumb:hover {
+  background-color: #888; /* Color de la manija al pasar el mouse */
+}
+
+.CloseModal {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 1rem 1rem 0 0;
+  z-index: 1000;
+}

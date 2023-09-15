@@ -1,0 +1,47 @@
+.labelLogin {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.inputLogin {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 1rem;
+  margin-bottom: .5rem;
+}
+
+.btnLoginContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnLoginContainer button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.btnRegister {
+  background: rgb(18, 118, 250);
+  color: white;
+  font-weight: 500;
+}
+
+.btnSignIn {
+  background: var(--bgGreen);
+  color: white;
+  font-weight: 700;
+}
+
+.btnSignOut {
+  background: var(--bgRed);
+  color: white;
+  font-weight: 700;
+}

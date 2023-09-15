@@ -94,13 +94,16 @@
 html,
 body {
   max-width: 100vw;
+  
   overflow-x: hidden;
+  overflow-y: hidden;
   font-size: 16px;
 }
 
 body {
   background: var(--bgDarkGray);
-    display: flex;
+  display: flex;
+  max-height: 100vh;
 }
 a {
   color: inherit;
