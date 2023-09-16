@@ -19,9 +19,11 @@ export default async function page() {
         <BtnModalNewGain />
         <BtnModalNewLoss />
       </TopMenuPage>
-      <BasicModal setShowModal={true}>
-        <FormGain />
-      </BasicModal>
+      <div className={styles.contenedorPrincipal}>
+        <div className={styles.containerContent}>
+          {<pre>{JSON.stringify(data, null, 2)}</pre>}
+        </div>
+      </div>
     </main>
   )
 }
