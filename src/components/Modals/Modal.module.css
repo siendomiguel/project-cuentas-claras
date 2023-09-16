@@ -20,6 +20,12 @@
   scrollbar-gutter: stable;
 }
 
+@media (max-width: 1400px)  {
+  .modalBody {
+    min-width: 30vw;
+  }
+}
+
 .modalBody::-webkit-scrollbar {
   width: 4px; /* Ancho de la barra de desplazamiento */
 }

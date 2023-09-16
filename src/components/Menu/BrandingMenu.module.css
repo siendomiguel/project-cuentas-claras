@@ -9,6 +9,16 @@
   padding: 0 1.5rem;
 }
 
+@media (max-width: 1400px) {
+  .topMenu {
+    padding: 0 1rem;
+  }
+
+  .AppName {
+    font-size: 0.875rem;
+  }
+}
+
 .version {
   background-color: #c5c5c5;
   padding: 2px 12px;

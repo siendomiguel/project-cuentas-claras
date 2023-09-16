@@ -9,7 +9,7 @@ const BrandingMenu = () => {
       <Link href="/">
         <section className={styles.topMenu}>
         <Image src={Logo} alt="Logo" width={30} height={30} />
-          <h1>Cuentas Claras</h1>
+          <h1 className={styles.AppName}>Cuentas Claras</h1>
           <p className={styles.version}>1.0.0</p>
         </section>
       </Link>
