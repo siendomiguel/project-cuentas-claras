@@ -30,11 +30,13 @@
 
 .containerContent::-webkit-scrollbar {
   width: 4px; /* Ancho de la barra de desplazamiento */
+  
 }
 
 /* Estilo para el "track" de la barra de desplazamiento (el fondo) */
 .containerContent::-webkit-scrollbar-track {
   background-color: #ffffff; /* Color de fondo del track */
+  margin: 10px 0;
 }
 
 /* Estilo para el "thumb" de la barra de desplazamiento (la manija) */
